@@ -43,8 +43,9 @@ From here you have two routes on how do you want to run the project: Docker rout
 
 1. `cd backend` 
 2. Create a volume for our database with `docker volume create get-django-saas-postgres`
-3. Build and run our Docker composition with `docker-compose up --build`
-4. Create a super user with `sudo docker-compose run web python manage.py createsuperuser`
+3. Create a volume for redis with `docker volume create get-django-saas-redis`
+4. Build and run our Docker composition with `docker-compose up --build`
+5. Create a super user with `sudo docker-compose run web python manage.py createsuperuser`
 
 #### Local setup route
 
